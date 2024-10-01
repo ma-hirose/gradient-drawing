@@ -1,3 +1,3 @@
-# radient image creation
+# Gradient image creation
 
 When I was collecting gradient images, I realized that it was difficult to find images that I liked. So I wrote code that would draw a gradient for me every time I ran it. This process is based on a very simple algorithm. First, a single line is drawn randomly on the screen. This line is defined by a spline interpolation connecting several randomly placed points. According to this line, every position on the screen has information about the minimum distance from the line segment. This is used as the basis for determining the position between the two colors. Since the two colors of the gradient and this line are defined randomly, the gradient will be unpredictable each time it is output.
